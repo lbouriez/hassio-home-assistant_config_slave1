@@ -1,0 +1,50 @@
+# Generic ignores
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
+
+# Directory (contents) ignores
+.cloud
+.storage
+deps
+custom_components
+icloud
+node-red
+/tts/
+www/*
+captures/
+themes/
+
+# Specific file ignores
+.config_entries.json
+.homekit.state
+.ios.conf
+.spotify-token-cache
+.tradfri_psk.conf
+.uuid
+core
+html5_push_registrations.conf
+known_devices.yaml
+options.xml
+OZW_Log.txt
+pyozw.sqlite
+secrets.yaml
+zwcfg_*
+zwscene.xml
+*.conf
+alexa_media*.pickle
+airsonos.xml
+
+# Ignore files created by IDE's
+.vscode
+.theia
+.Trash*
+
+# Specific keeps
+!.gitkeep
+!www/img/
+!/*/tts/

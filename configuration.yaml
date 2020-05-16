@@ -1,0 +1,27 @@
+#################################################################
+## Home Assistant
+#################################################################
+
+homeassistant:
+  name: Home - Living room
+  latitude: !secret entitie_zone_home_latitude
+  longitude: !secret entitie_zone_home_longitude
+  elevation: !secret entitie_zone_home_elevation
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Toronto
+  auth_providers:
+    - type: homeassistant
+    - type: trusted_networks
+      trusted_networks:
+        - 192.168.1.0/24
+      trusted_users:
+        192.168.1.0/24:
+          - !secret entitie_person_laurent_user_id_rpi
+  # Load packages
+  packages: !include_dir_named config/integrations
+  auth_mfa_modules:
+    - type: totp
+      name: Authenticator app
+  whitelist_external_dirs:
+    - /config/captures
