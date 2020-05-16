@@ -1,0 +1,5 @@
+name: everyone
+platform: group
+services:
+  - service: laurent
+  - service: giulia

@@ -1,0 +1,12 @@
+alias: System - Home Assistant startup notification
+initial_state: True
+trigger:
+  - platform: homeassistant
+    event: start
+action:
+  - service: script.notify
+    data:
+      notify_id: laurent
+      priority: 0
+      title: "Information"
+      message: "Home Assistant has just been started on the living room instance"

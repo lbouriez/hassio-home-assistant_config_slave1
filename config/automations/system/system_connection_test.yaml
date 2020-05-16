@@ -1,0 +1,23 @@
+alias: System - Reboot if connection is down
+initial_state: true
+trigger:
+  - platform: state
+    entity_id: binary_sensor.lan
+    to: 'off'
+    for:
+      minutes: 3
+  - platform: state
+    entity_id: binary_sensor.wan
+    to: 'off'
+    for:
+      minutes: 3
+action:
+  - service: script.notify
+    data:
+      notify_id: everyone
+      priority: 2
+      title: "Alert"
+      persistent_notification: True
+      persistent_notification_id: hassio_down
+      message: 'Home Assistant disconneted from router - rebooting hassio...'
+  - service: hassio.host_reboot

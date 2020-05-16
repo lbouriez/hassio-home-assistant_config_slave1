@@ -1,0 +1,19 @@
+alias: System - HACS update alert
+initial_state: True
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.hacs
+    above: 2
+  - platform: homeassistant
+    event: start
+condition:
+  - condition: numeric_state
+    entity_id: 'sensor.hacs'
+    above: 0
+action:
+  - service: persistent_notification.create
+    data_template:
+      title: HACS update available
+      message: >-
+        There are new updates available in HACS in the living room instance
+      notification_id: hacs_upgrade
