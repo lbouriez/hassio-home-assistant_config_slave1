@@ -1,6 +1,6 @@
 platform: miflora
 mac: !secret entitie_mipot_mac
-name: Basilic
+name: Fuchsia
 force_update: true
 median: 3
 monitored_conditions:
