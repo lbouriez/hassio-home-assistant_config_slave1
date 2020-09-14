@@ -1,6 +1,6 @@
 platform: miflora
 mac: !secret entitie_miflora_pachira_mac
-name: Pachira
+name: Bansai
 force_update: true
 median: 3
 monitored_conditions:

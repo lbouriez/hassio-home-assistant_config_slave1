@@ -1,6 +1,6 @@
 platform: miflora
 mac: !secret entitie_miflora_bamboo_mac
-name: Living room Bamboo
+name: Bansai Japanese
 force_update: true
 median: 3
 monitored_conditions:
