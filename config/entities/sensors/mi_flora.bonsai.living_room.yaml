@@ -1,6 +1,6 @@
 platform: miflora
-mac: !secret entitie_miflora_bamboo_mac
-name: Bansai Japanese
+mac: !secret entitie_miflora_green_ficus_bonsai
+name: Bonsai Ficus
 force_update: true
 median: 3
 monitored_conditions:

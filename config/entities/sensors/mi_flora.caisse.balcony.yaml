@@ -1,5 +1,5 @@
 platform: miflora
-mac: !secret entitie_miflora_caisse_mac
+mac: !secret entitie_miflora_white_bamboo
 name: Caisse basilic
 force_update: true
 median: 3
