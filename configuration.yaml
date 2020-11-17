@@ -14,9 +14,12 @@ homeassistant:
     - type: homeassistant
     - type: trusted_networks
       trusted_networks:
-        - 192.168.1.0/24
+        - 192.168.20.0/24
+        - 192.168.10.0/24
       trusted_users:
-        192.168.1.0/24:
+        192.168.20.0/24:
+          - !secret entitie_person_laurent_user_id_rpi
+        192.168.10.0/24:
           - !secret entitie_person_laurent_user_id_rpi
   # Load packages
   packages: !include_dir_named config/integrations

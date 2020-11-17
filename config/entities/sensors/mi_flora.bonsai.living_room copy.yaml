@@ -1,5 +1,5 @@
 platform: miflora
-mac: !secret entitie_miflora_green_ficus_bonsai
+mac: !secret entitie_miflora_green_2_ficus_bonsai
 name: Bonsai Ficus
 force_update: true
 median: 3

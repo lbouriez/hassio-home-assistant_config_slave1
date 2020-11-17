@@ -1,6 +1,6 @@
 platform: miflora
-mac: !secret entitie_miflora_green_1_little_bonsai
-name: Bonsai Japanese
+mac: !secret entitie_miflora_green_3_bird_of_paradise
+name: Bird of Paradise
 force_update: true
 median: 3
 monitored_conditions:
